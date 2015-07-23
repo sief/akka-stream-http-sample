@@ -3,7 +3,7 @@ Simple WebSocket Service with Akka Streams / HTTP
 
 1. a scheduled Actor checks an external webservice every 5 seconds for a conversion rate
 2. stores the rate in a database only if it has changed since the last time
-3. the WebSocket streams all stored values with timestamp and once all availble stored data is transmitted it continues to send the changed values in real time.
+3. the WebSocket streams all stored values. Once all available stored data is transmitted it continues streaming real-time updates.
 
 
 Run "sbt run" from the project directory. To connect to the WS endpoint you can use the Chrome extension simple-websocket-client.
